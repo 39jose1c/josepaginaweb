@@ -1,0 +1,1186 @@
+
+100%
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Educação Financeira | Controle seu Dinheiro</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+font-family:Arial,Helvetica,sans-serif;
+background:#eef4ef;
+color:#333;
+
+}
+
+
+header{
+
+background:linear-gradient(135deg,#0f5132,#198754);
+color:white;
+padding:80px 20px;
+text-align:center;
+
+}
+
+
+header h1{
+
+font-size:55px;
+margin-bottom:20px;
+
+}
+
+
+header p{
+
+font-size:22px;
+max-width:850px;
+margin:auto;
+line-height:1.8;
+
+}
+
+
+nav{
+
+background:#14532d;
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+
+nav ul{
+
+display:flex;
+justify-content:center;
+list-style:none;
+flex-wrap:wrap;
+
+}
+
+
+nav a{
+
+display:block;
+padding:18px 28px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+nav a:hover{
+
+background:#198754;
+
+}
+
+
+.banner{
+
+background:white;
+padding:60px 20px;
+text-align:center;
+
+}
+
+
+.banner h2{
+
+font-size:42px;
+color:#14532d;
+margin-bottom:20px;
+
+}
+
+
+.banner p{
+
+max-width:900px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+
+}
+
+
+.botao{
+
+display:inline-block;
+margin-top:35px;
+background:#198754;
+color:white;
+padding:16px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:50px 0;
+
+}
+
+
+.titulo{
+
+text-align:center;
+font-size:38px;
+color:#14532d;
+margin-bottom:40px;
+
+}
+
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+.card h3{
+
+color:#198754;
+margin-bottom:15px;
+
+}
+
+
+.card p{
+
+line-height:1.8;
+
+}
+
+
+section{
+
+margin-bottom:70px;
+
+}
+
+
+.lista{
+
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+.lista li{
+
+margin:12px;
+font-size:18px;
+
+}
+
+
+/* ÁREA INTERATIVA */
+
+.interativo{
+
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+.interativo input,
+.interativo select{
+
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+
+}
+
+
+.interativo button{
+
+background:#198754;
+color:white;
+border:none;
+padding:14px 25px;
+border-radius:25px;
+cursor:pointer;
+font-size:16px;
+
+}
+
+
+.interativo button:hover{
+
+background:#0f5132;
+
+}
+
+
+.resultado{
+
+margin-top:20px;
+padding:20px;
+background:#eef8f0;
+border-left:6px solid #198754;
+border-radius:10px;
+
+}
+
+
+.check label{
+
+display:block;
+margin:15px 0;
+font-size:18px;
+
+}
+
+
+footer{
+
+background:#14532d;
+color:white;
+text-align:center;
+padding:40px;
+
+}
+
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:38px;
+
+}
+
+
+nav ul{
+
+flex-direction:column;
+
+}
+
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+💰 Educação Financeira
+</h1>
+
+
+<p>
+Aprenda a controlar seus ganhos, organizar seus gastos,
+economizar dinheiro e construir um futuro financeiro seguro.
+</p>
+
+
+</header>
+
+
+<nav>
+
+<ul>
+
+<li>
+<a href="#inicio">Início</a>
+</li>
+
+<li>
+<a href="#calculadora">Calculadora</a>
+</li>
+
+<li>
+<a href="#metas">Metas</a>
+</li>
+
+<li>
+<a href="#quiz">Quiz</a>
+</li>
+
+<li>
+<a href="#habitos">Hábitos</a>
+</li>
+
+</ul>
+
+</nav>
+```
+```html
+<!-- BANNER PRINCIPAL -->
+
+<section class="banner" id="inicio">
+
+<h2>
+Seu dinheiro precisa trabalhar a seu favor
+</h2>
+
+<p>
+Controlar as finanças é entender quanto você ganha,
+quanto gasta, quanto consegue guardar e como planejar
+seus objetivos.
+</p>
+
+<a href="#calculadora" class="botao">
+Começar Agora
+</a>
+
+</section>
+
+
+<div class="container">
+
+
+<!-- EDUCAÇÃO FINANCEIRA -->
+
+<section>
+
+<h2 class="titulo">
+📚 O que é Educação Financeira?
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>💡 Conhecimento</h3>
+
+<p>
+Aprender a administrar o dinheiro ajuda a tomar decisões
+melhores e construir uma vida financeira equilibrada.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>💰 Ganhos</h3>
+
+<p>
+Conheça todas as fontes de renda e saiba exatamente
+quanto dinheiro entra todos os meses.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🛒 Gastos</h3>
+
+<p>
+Registrar despesas permite descobrir onde o dinheiro
+está sendo utilizado e encontrar oportunidades de economia.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>📈 Investimentos</h3>
+
+<p>
+Investir pode ajudar seu dinheiro a crescer ao longo do
+tempo e aproximar você dos seus objetivos.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CALCULADORA -->
+
+<section id="calculadora">
+
+
+<h2 class="titulo">
+🧮 Calculadora Financeira
+</h2>
+
+
+<div class="interativo">
+
+
+<h3>
+Descubra sua situação financeira mensal
+</h3>
+
+
+<input 
+id="renda"
+type="number"
+placeholder="Digite sua renda mensal">
+
+
+<input
+id="gastos"
+type="number"
+placeholder="Digite seus gastos mensais">
+
+
+<button onclick="calcularFinanceiro()">
+
+Calcular
+
+</button>
+
+
+<div id="resultadoFinanceiro" class="resultado">
+
+Seu resultado aparecerá aqui.
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- CONTROLE DE GASTOS -->
+
+
+<section>
+
+
+<h2 class="titulo">
+
+🛒 Categorias de Gastos
+
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>🏠 Moradia</h3>
+
+<p>
+Aluguel, financiamento, água, energia e manutenção.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🍎 Alimentação</h3>
+
+<p>
+Mercado, restaurantes e refeições.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🚗 Transporte</h3>
+
+<p>
+Combustível, ônibus, aplicativos e manutenção.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🎮 Lazer</h3>
+
+<p>
+Passeios, viagens, jogos e entretenimento.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>📚 Educação</h3>
+
+<p>
+Cursos, livros e aprendizado profissional.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🏥 Saúde</h3>
+
+<p>
+Consultas, medicamentos e cuidados pessoais.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- METAS FINANCEIRAS -->
+
+
+<section id="metas">
+
+
+<h2 class="titulo">
+
+🎯 Simulador de Metas Financeiras
+
+</h2>
+
+
+<div class="interativo">
+
+
+<h3>
+Planeje quando realizará seu objetivo
+</h3>
+
+
+<input
+id="valorMeta"
+type="number"
+placeholder="Valor da sua meta">
+
+
+<input
+id="guardarMeta"
+type="number"
+placeholder="Quanto consegue guardar por mês">
+
+
+<button onclick="calcularMeta()">
+
+Calcular tempo
+
+</button>
+
+
+<div id="resultadoMeta" class="resultado">
+
+Informe os valores acima.
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- REGRA 50 30 20 -->
+
+
+<section>
+
+
+<h2 class="titulo">
+
+📊 Regra 50-30-20
+
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+50% Necessidades
+</h3>
+
+<p>
+Moradia, alimentação, contas e despesas essenciais.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+30% Desejos
+</h3>
+
+<p>
+Lazer, compras e experiências pessoais.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+20% Futuro
+</h3>
+
+<p>
+Reserva financeira, investimentos e objetivos.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- CHECKLIST -->
+
+
+<section id="habitos">
+
+
+<h2 class="titulo">
+
+✅ Avalie seus hábitos financeiros
+
+</h2>
+
+
+
+<div class="interativo check">
+
+
+<label>
+<input type="checkbox">
+Anoto meus gastos diariamente
+</label>
+
+
+<label>
+<input type="checkbox">
+Guardo dinheiro todos os meses
+</label>
+
+
+<label>
+<input type="checkbox">
+Evito compras por impulso
+</label>
+
+
+<label>
+<input type="checkbox">
+Tenho objetivos financeiros definidos
+</label>
+
+
+<label>
+<input type="checkbox">
+Tenho uma reserva de emergência
+</label>
+
+
+<button onclick="verificarHabitos()">
+
+Avaliar
+
+</button>
+
+
+<div id="resultadoHabitos" class="resultado">
+
+Marque suas opções.
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- QUIZ -->
+
+
+<section id="quiz">
+
+
+<h2 class="titulo">
+
+🧠 Quiz de Educação Financeira
+
+</h2>
+
+
+<div class="interativo">
+
+
+<h3>
+Qual atitude ajuda mais a melhorar sua vida financeira?
+</h3>
+
+
+
+<select id="pergunta">
+
+<option value="0">
+Comprar sempre que desejar
+</option>
+
+
+<option value="1">
+Planejar gastos e acompanhar despesas
+</option>
+
+
+<option value="0">
+Ignorar pequenas compras
+</option>
+
+
+</select>
+
+
+
+<button onclick="responderQuiz()">
+
+Responder
+
+</button>
+
+
+<div id="resultadoQuiz" class="resultado">
+
+Escolha uma resposta.
+
+</div>
+
+
+</div>
+
+
+</section>
+```
+```html
+<script>
+
+
+// CALCULADORA FINANCEIRA
+
+function calcularFinanceiro(){
+
+
+let renda =
+Number(document.getElementById("renda").value);
+
+
+let gastos =
+Number(document.getElementById("gastos").value);
+
+
+let resultado =
+document.getElementById("resultadoFinanceiro");
+
+
+
+if(renda <= 0 || gastos < 0){
+
+
+resultado.innerHTML =
+"⚠️ Digite valores válidos para calcular.";
+
+
+return;
+
+}
+
+
+
+let sobra = renda - gastos;
+
+
+
+if(sobra > 0){
+
+
+resultado.innerHTML =
+
+"✅ Parabéns!<br><br>" +
+
+"Depois de pagar seus gastos, você possui uma sobra de <strong>R$ "
+
++ sobra.toFixed(2)
+
++ "</strong> por mês.<br><br>" +
+
+"Uma boa estratégia é guardar uma parte desse valor para objetivos futuros.";
+
+
+
+}
+
+
+else if(sobra == 0){
+
+
+resultado.innerHTML =
+
+"⚠️ Sua renda está totalmente comprometida.<br><br>" +
+
+"Procure reduzir algumas despesas para conseguir criar uma reserva.";
+
+
+
+}
+
+
+else{
+
+
+resultado.innerHTML =
+
+"🚨 Atenção!<br><br>" +
+
+"Você está gastando <strong>R$ "
+
++ Math.abs(sobra).toFixed(2)
+
++ "</strong> a mais do que recebe.<br><br>" +
+
+"Revise seus gastos e procure equilibrar seu orçamento.";
+
+
+
+}
+
+
+}
+
+
+
+
+// SIMULADOR DE METAS
+
+
+function calcularMeta(){
+
+
+let valor =
+
+Number(document.getElementById("valorMeta").value);
+
+
+
+let guardar =
+
+Number(document.getElementById("guardarMeta").value);
+
+
+
+let resultado =
+
+document.getElementById("resultadoMeta");
+
+
+
+if(valor <= 0 || guardar <= 0){
+
+
+resultado.innerHTML =
+"⚠️ Informe valores válidos.";
+
+
+return;
+
+}
+
+
+
+let meses = Math.ceil(valor / guardar);
+
+
+
+resultado.innerHTML =
+
+"🎯 Para alcançar sua meta de <strong>R$ "
+
++ valor.toFixed(2)
+
++ "</strong>, guardando <strong>R$ "
+
++ guardar.toFixed(2)
+
++ "</strong> por mês:<br><br>"
+
++
+
+"Você precisará de aproximadamente <strong>"
+
++ meses +
+
+" meses</strong>.";
+
+
+
+}
+
+
+
+
+// CHECKLIST DE HÁBITOS
+
+
+function verificarHabitos(){
+
+
+let itens =
+
+document.querySelectorAll(".check input");
+
+
+
+let pontos = 0;
+
+
+
+itens.forEach(function(item){
+
+
+if(item.checked){
+
+pontos++;
+
+}
+
+
+});
+
+
+
+let resultado =
+
+document.getElementById("resultadoHabitos");
+
+
+
+if(pontos == 5){
+
+
+resultado.innerHTML =
+
+"🌟 Excelente!<br><br>" +
+
+"Você possui hábitos financeiros muito saudáveis.";
+
+
+}
+
+
+else if(pontos >= 3){
+
+
+resultado.innerHTML =
+
+"👍 Bom trabalho!<br><br>" +
+
+"Você está no caminho certo. Continue melhorando seus hábitos.";
+
+
+}
+
+
+else{
+
+
+resultado.innerHTML =
+
+"📚 Você pode começar com pequenas mudanças.<br><br>" +
+
+"Organizar gastos e criar metas são ótimos primeiros passos.";
+
+
+}
+
+
+}
+
+
+
+
+
+// QUIZ FINANCEIRO
+
+
+function responderQuiz(){
+
+
+let resposta =
+
+document.getElementById("pergunta").value;
+
+
+
+let resultado =
+
+document.getElementById("resultadoQuiz");
+
+
+
+if(resposta == "1"){
+
+
+resultado.innerHTML =
+
+"✅ Resposta correta!<br><br>" +
+
+"Planejar e acompanhar os gastos é uma das principais atitudes para melhorar sua vida financeira.";
+
+
+
+}
+
+
+else{
+
+
+resultado.innerHTML =
+
+"❌ Essa escolha pode dificultar seus objetivos financeiros.<br><br>" +
+
+"Tente sempre planejar antes de gastar.";
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+
+<footer>
+
+
+<p>
+💰 Educação Financeira
+</p>
+
+
+<p>
+Aprenda hoje para ter mais tranquilidade amanhã.
+</p>
+
+
+<p>
+© 2026 - Desenvolvido por José Miguel
+</p>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
